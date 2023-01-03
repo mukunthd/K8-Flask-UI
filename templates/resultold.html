@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="../static/css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div >
+			<table border="1" width="100">
+			<form method="POST" action="/deletepod">
+					<tr>
+						<th>Pod_Names</th>
+						<th>Container Image</th>
+						<th>Container Status</th>
+				  		<th>Container Created Time</th>
+				<tr>
+					<td style="width: 200px">
+					{% for i in pod_name %}
+					<li ><input type="checkbox" name="pod-names" value="{{ i }}"> <label>{{ i }}</label> </li>
+					{% endfor %}
+					</td>
+				<td style="width: 100px">
+					{% for i in image_name %}
+					<li > <label>{{i}}</label></li>
+					{% endfor %}
+					</td>
+				<td style="width: 100px">
+					{% for i in status %}
+					<li ><label>{{i}}</label></li>
+					{% endfor %}
+					</td>
+				  <td style="width: 100px">
+					{% for i in creation_timestamp %}
+					<li ><label>{{i}}</label></li>
+					{% endfor %}
+					</td>
+				</tr>
+			</table>
+			    <input type="submit" action="submit" class="btn">
+				<br>
+				<br>
+				<br>
+				</form>
+			<a class="btn" href="/" style="text-decoration: none;">Back</a>
+		</div>
+</form>
+	</body>
+</html>
+

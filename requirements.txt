@@ -1,0 +1,8 @@
+kubernetes
+boto3
+Flask
+flask-wtf
+WTForms==2.3.3
+wtforms
+flask_wtf
+flask

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="../static/css/style.css" rel="stylesheet">
+<body>
+<div class="form-box">
+<form id="header2" method="POST" action="">
+     {{ form.hidden_tag() }}
+    <br>
+    <br>
+    {{ form.parameter_name.label }} {{ form.parameter_name }}
+    <br>
+    {{ form.parameter_key.label }} {{ form.parameter_key }}
+    <br>
+    {{ form.submit(class_="btn") }}
+    <br>
+    <br>
+    <br>
+</form>
+ <div>
+     <a class="btn" href="/" style="text-decoration: none;">Back</a>
+ </div>
+</div>
+</body>
+</html>
